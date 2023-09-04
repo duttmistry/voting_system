@@ -1,0 +1,16 @@
+{
+  "name": "vote-card",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/vote-card/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/vote-card/**/*.{ts,tsx,js,jsx}"]
+      }
+    }
+  }
+}
